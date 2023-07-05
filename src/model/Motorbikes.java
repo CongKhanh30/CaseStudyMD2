@@ -5,17 +5,18 @@ public class Motorbikes extends InfoVehicle {
     private String status;
     private String category;
     private int numberOfMotorbike;
-    private double rentCost;
+    private double motorbikePrice;
 
-    public Motorbikes() {}
+    public Motorbikes() {
+    }
 
-    public Motorbikes(String vehicleId, String automaker, int yearOfProduction, String motorbikeName, String status, String category, int numberOfMotorbike, double rentCost) {
+    public Motorbikes(String vehicleId, String automaker, int yearOfProduction, String motorbikeName, String status, String category, int numberOfMotorbike, double motorbikePrice) {
         super(vehicleId, automaker, yearOfProduction);
         this.motorbikeName = motorbikeName;
         this.status = status;
         this.category = category;
         this.numberOfMotorbike = numberOfMotorbike;
-        this.rentCost = rentCost;
+        this.motorbikePrice = motorbikePrice;
     }
 
     public String getMotorbikeName() {
@@ -50,11 +51,11 @@ public class Motorbikes extends InfoVehicle {
         this.numberOfMotorbike = numberOfMotorbike;
     }
 
-    public double getRentCost() {
-        return rentCost;
+    public double getMotorbikePrice() {
+        return motorbikePrice;
     }
 
-    public void setRentCost(double rentCost) {
-        this.rentCost = rentCost;
+    public void setMotorbikePrice(double motorbikePrice) {
+        this.motorbikePrice = motorbikePrice;
     }
 }

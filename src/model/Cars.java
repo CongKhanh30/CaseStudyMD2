@@ -5,18 +5,18 @@ public class Cars extends InfoVehicle {
     private String status;
     private String category;
     private int numberOfCar;
-    private double rentCost;
+    private double carPrice;
 
     public Cars() {
     }
 
-    public Cars(String vehicleId, String automaker, int yearOfProduction, String carName, String status, String category, int numberOfCar, double rentCost) {
+    public Cars(String vehicleId, String automaker, int yearOfProduction, String carName, String status, String category, int numberOfCar, double carPrice) {
         super(vehicleId, automaker, yearOfProduction);
         this.carName = carName;
         this.status = status;
         this.category = category;
         this.numberOfCar = numberOfCar;
-        this.rentCost = rentCost;
+        this.carPrice = carPrice;
     }
 
     public String getCarName() {
@@ -51,11 +51,11 @@ public class Cars extends InfoVehicle {
         this.numberOfCar = numberOfCar;
     }
 
-    public double getRentCost() {
-        return rentCost;
+    public double getCarPrice() {
+        return carPrice;
     }
 
-    public void setRentCost(double rentCost) {
-        this.rentCost = rentCost;
+    public void setCarPrice(double carPrice) {
+        this.carPrice = carPrice;
     }
 }

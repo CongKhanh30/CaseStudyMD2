@@ -23,7 +23,7 @@ public class RAWCar implements RAWFile<Cars> {
                     cars1.getStatus() + "," +
                     cars1.getCategory() + "," +
                     cars1.getNumberOfCar() + "," +
-                    cars1.getRentCost() + "\n";
+                    cars1.getCarPrice() + "\n";
         }
 
         FileWriter fileWriter = new FileWriter(file);

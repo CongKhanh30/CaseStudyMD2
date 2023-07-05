@@ -21,7 +21,7 @@ public class RAWMotorbike implements RAWFile<Motorbikes> {
                     motorbikes1.getStatus() + "," +
                     motorbikes1.getCategory() + "," +
                     motorbikes1.getNumberOfMotorbike() + "," +
-                    motorbikes1.getRentCost() + "\n";
+                    motorbikes1.getMotorbikePrice() + "\n";
         }
 
         FileWriter fileWriter = new FileWriter(file);
