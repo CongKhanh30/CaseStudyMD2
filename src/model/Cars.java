@@ -7,7 +7,8 @@ public class Cars extends InfoVehicle {
     private int numberOfCar;
     private double rentCost;
 
-    public Cars() {}
+    public Cars() {
+    }
 
     public Cars(String vehicleId, String automaker, int yearOfProduction, String carName, String status, String category, int numberOfCar, double rentCost) {
         super(vehicleId, automaker, yearOfProduction);
