@@ -40,7 +40,7 @@ public class RAWMotorbike implements RAWFile<Motorbikes> {
         String line = null;
         while ((line = bufferedReader.readLine()) != null) {
             String[] data = line.split(",");
-            list.add(new Motorbikes(data[0], data[1], Integer.parseInt(data[2]), data[3], data[4], data[5], Integer.parseInt(data[6]), Double.parseDouble(data[7])));
+            list.add(new Motorbikes(data[0], data[1], Integer.parseInt(data[2]), data[3], data[4], data[5], Integer.parseInt(data[6]), Long.parseLong(data[7])));
         }
         bufferedReader.close();
         return list;

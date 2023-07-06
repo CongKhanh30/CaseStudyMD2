@@ -5,12 +5,12 @@ public class Cars extends InfoVehicle {
     private String status;
     private String category;
     private int numberOfCar;
-    private double carPrice;
+    private Long carPrice;
 
     public Cars() {
     }
 
-    public Cars(String vehicleId, String automaker, int yearOfProduction, String carName, String status, String category, int numberOfCar, double carPrice) {
+    public Cars(String vehicleId, String automaker, int yearOfProduction, String carName, String status, String category, int numberOfCar, Long carPrice) {
         super(vehicleId, automaker, yearOfProduction);
         this.carName = carName;
         this.status = status;
@@ -51,11 +51,23 @@ public class Cars extends InfoVehicle {
         this.numberOfCar = numberOfCar;
     }
 
-    public double getCarPrice() {
+    public Long getCarPrice() {
         return carPrice;
     }
 
-    public void setCarPrice(double carPrice) {
+    public void setCarPrice(Long carPrice) {
         this.carPrice = carPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "ID phương tiện: " + super.getVehicleId() + "\n" +
+                "Hãng Xe: " + super.getAutomaker() + "\n" +
+                "Tên Phương Tiện: " + this.getCarName() + "\n" +
+                "Trạng Thái Xe: " + this.getStatus() + "\n" +
+                "Loại Xe: " + this.getCategory() + "\n" +
+                "Năm Sản Xuất: " + super.getYearOfProduction() + "\n" +
+                "Số Lượng: " + this.getNumberOfCar() + "\n" +
+                "Giá: " + this.getCarPrice()+"VNĐ";
     }
 }

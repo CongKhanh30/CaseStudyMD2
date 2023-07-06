@@ -5,12 +5,12 @@ public class Motorbikes extends InfoVehicle {
     private String status;
     private String category;
     private int numberOfMotorbike;
-    private double motorbikePrice;
+    private Long motorbikePrice;
 
     public Motorbikes() {
     }
 
-    public Motorbikes(String vehicleId, String automaker, int yearOfProduction, String motorbikeName, String status, String category, int numberOfMotorbike, double motorbikePrice) {
+    public Motorbikes(String vehicleId, String automaker, int yearOfProduction, String motorbikeName, String status, String category, int numberOfMotorbike, Long motorbikePrice) {
         super(vehicleId, automaker, yearOfProduction);
         this.motorbikeName = motorbikeName;
         this.status = status;
@@ -51,11 +51,23 @@ public class Motorbikes extends InfoVehicle {
         this.numberOfMotorbike = numberOfMotorbike;
     }
 
-    public double getMotorbikePrice() {
+    public Long getMotorbikePrice() {
         return motorbikePrice;
     }
 
-    public void setMotorbikePrice(double motorbikePrice) {
+    public void setMotorbikePrice(Long motorbikePrice) {
         this.motorbikePrice = motorbikePrice;
+    }
+
+    @Override
+    public String toString() {
+        return "ID phương tiện: " + super.getVehicleId() + "\n" +
+                "Hãng Xe: " + super.getAutomaker() + "\n" +
+                "Tên Phương Tiện: " + this.getMotorbikeName() + "\n" +
+                "Trạng Thái Xe: " + this.getStatus() + "\n" +
+                "Loại Xe: " + this.getCategory() + "\n" +
+                "Năm Sản Xuất: " + super.getYearOfProduction() + "\n" +
+                "Số Lượng: " + this.getNumberOfMotorbike() + "\n" +
+                "Giá: " + this.getMotorbikePrice()+"VNĐ";
     }
 }

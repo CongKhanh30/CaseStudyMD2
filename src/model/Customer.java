@@ -50,7 +50,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Số CCCD khách hàng: " + this.getCustomerId() + "\n" +
+        return "ID Khách Hàng: " + this.getCustomerId() + "\n" +
                 "Họ Và Tên: " + this.getFullName() + "\n" +
                 "Số Điện Thoại: " + this.getPhone() + "\n" +
                 "Địa Chỉ: " + this.getAddress();

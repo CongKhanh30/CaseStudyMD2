@@ -13,9 +13,9 @@ public class RAWCar implements RAWFile<Cars> {
     private File file = new File("F:\\CodeGYM\\CaseStudyModule2\\src\\data\\Cars.csv");
 
     @Override
-    public void writerFile(List<Cars> motorbikes) throws IOException {
+    public void writerFile(List<Cars> cars) throws IOException {
         String data = "";
-        for (Cars cars1 : motorbikes) {
+        for (Cars cars1 : cars) {
             data += cars1.getVehicleId() + "," +
                     cars1.getAutomaker() + "," +
                     cars1.getYearOfProduction() + "," +
@@ -42,7 +42,7 @@ public class RAWCar implements RAWFile<Cars> {
         String line = null;
         while ((line = bufferedReader.readLine()) != null) {
             String[] data = line.split(",");
-            list.add(new Cars(data[0], data[1], Integer.parseInt(data[2]), data[3], data[4], data[5], Integer.parseInt(data[6]), Double.parseDouble(data[7])));
+            list.add(new Cars(data[0], data[1], Integer.parseInt(data[2]), data[3], data[4], data[5], Integer.parseInt(data[6]), Long.parseLong(data[7])));
         }
         bufferedReader.close();
         return list;
