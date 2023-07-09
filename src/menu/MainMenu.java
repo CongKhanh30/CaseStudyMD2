@@ -1,7 +1,8 @@
 package menu;
 
 import check.Check;
-import model.Motorbikes;
+import consoleColor.ConsoleColor;
+
 
 public class MainMenu {
     private Check check = new Check();
@@ -13,10 +14,10 @@ public class MainMenu {
     public void mainMenu() {
         int choice = -1;
         do {
-            String str = "^.^ ^_^ Công Khanh Auto ^.^ ^_^\n" +
+            String str = ConsoleColor.BLACK + ConsoleColor.GREEN_BACKGROUND + "^.^ ^_^ CÔNG KHANH AUTO ^.^ ^_^" + ConsoleColor.RESET + "\n" +
                     "1. Quản Lý Auto\n" +
                     "2. Quản Lý Khách Hàng\n" +
-                    "3. Bán Hàng\n" +
+                    "3. Hóa Đơn\n" +
                     "0. Thoát";
             System.out.println(str);
             System.out.println("----------");
@@ -46,7 +47,7 @@ public class MainMenu {
     private void vehicleMenu() {
         int choice = -1;
         do {
-            String str = "===== Quản Lý Auto =====\n" +
+            String str = ConsoleColor.BLACK + ConsoleColor.GREEN_BACKGROUND + "===== Quản Lý Auto =====" + ConsoleColor.RESET + "\n" +
                     "1. Quản Lý Ô Tô\n" +
                     "2. Quản Lý Xe Máy\n" +
                     "0. Thoát";

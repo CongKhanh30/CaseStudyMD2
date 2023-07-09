@@ -1,4 +1,4 @@
-package management.interfaceManagement;
+package management.iManagement;
 
 import java.util.List;
 

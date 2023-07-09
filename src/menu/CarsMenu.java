@@ -1,6 +1,7 @@
 package menu;
 
 import check.Check;
+import consoleColor.ConsoleColor;
 import management.manager.CarManage;
 import model.Cars;
 
@@ -15,7 +16,7 @@ public class CarsMenu {
     public void carsMenu() {
         int choice = -1;
         do {
-            String str = "^.^ ^_^ Quản Lý Ô Tô ^_^ ^.^\n" +
+            String str = ConsoleColor.BLACK + ConsoleColor.BLUE_BACKGROUND + "^.^ ^_^ Quản Lý Ô Tô ^_^ ^.^" + ConsoleColor.RESET + "\n" +
                     "1. Thêm Ô Tô\n" +
                     "2. Sửa Thông Tin Ô Tô\n" +
                     "3. Xóa Ô Tô\n" +

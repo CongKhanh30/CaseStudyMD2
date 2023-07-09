@@ -1,6 +1,7 @@
 package menu;
 
 import check.Check;
+import consoleColor.ConsoleColor;
 import management.manager.CustomerManage;
 import model.Customer;
 
@@ -15,7 +16,7 @@ public class CustomerMenu {
     public void customerMenu() {
         int choice = -1;
         do {
-            String str = "^.^ ^_^ Quản Lý Khách Hàng ^_^ ^.^\n" +
+            String str = ConsoleColor.BLACK + ConsoleColor.GREEN_BACKGROUND + "^.^ ^_^ Quản Lý Khách Hàng ^_^ ^.^" + ConsoleColor.RESET + "\n" +
                     "1. Thêm Khách Hàng\n" +
                     "2. Sửa Khách Hàng\n" +
                     "3. Xóa Khách Hàng\n" +
